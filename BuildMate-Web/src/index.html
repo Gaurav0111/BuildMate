@@ -1,13 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>BuildMateWeb</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BuildMate - Home Construction</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('a12772d8-db9a-4905-aeda-23be93f778f1.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      backdrop-filter: brightness(0.85);
+    }
+    .bg-glass {
+      background-color: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(8px);
+    }
+  </style>
 </head>
-<body>
-  <app-root></app-root>
+<body class="font-sans">
+  <nav class="bg-glass shadow-md p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-blue-600">🏗️ BuildMate</h1>
+    <div class="space-x-4">
+      <a href="#home" class="text-gray-700 hover:text-blue-500">Home</a>
+      <a href="#dashboard" class="text-gray-700 hover:text-blue-500">Dashboard</a>
+      <a href="#quote" class="text-gray-700 hover:text-blue-500">Quote</a>
+      <a href="#materials" class="text-gray-700 hover:text-blue-500">Materials</a>
+      <a href="#payments" class="text-gray-700 hover:text-blue-500">Payments</a>
+    </div>
+  </nav>
+
+  <main class="p-6">
+    <section id="home" class="mb-12 bg-glass p-6 rounded-xl">
+      <h2 class="text-3xl font-bold text-blue-700 text-center">Welcome to BuildMate</h2>
+      <p class="mt-4 text-gray-700 text-center">A transparent, tech-driven way to build your dream home.</p>
+    </section>
+
+    <section id="dashboard" class="mb-12 bg-glass p-6 rounded-xl">
+      <h2 class="text-2xl font-semibold text-green-700">📊 Project Dashboard</h2>
+      <div class="mt-4 space-y-4">
+        <div class="bg-white p-4 rounded-lg shadow">Foundation: ✅ Completed</div>
+        <div class="bg-white p-4 rounded-lg shadow">Walls: ⌛ In Progress</div>
+        <div class="bg-white p-4 rounded-lg shadow">Roof: 🔜 Upcoming</div>
+      </div>
+    </section>
+
+    <section id="quote" class="mb-12 bg-glass p-6 rounded-xl">
+      <h2 class="text-2xl font-semibold text-blue-700">📐 Get Your Quote</h2>
+      <form class="mt-4 space-y-4 max-w-md">
+        <input type="text" placeholder="Plot Size (sq ft)" class="w-full p-2 border rounded" />
+        <select class="w-full p-2 border rounded">
+          <option>Standard</option>
+          <option>Premium</option>
+          <option>Luxury</option>
+        </select>
+        <input type="number" placeholder="Budget (in ₹)" class="w-full p-2 border rounded" />
+        <button type="button" onclick="alert('Quote generated!')" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Generate Quote</button>
+      </form>
+    </section>
+
+    <section id="materials" class="mb-12 bg-glass p-6 rounded-xl">
+      <h2 class="text-2xl font-semibold text-yellow-700">📦 Materials Tracker</h2>
+      <ul class="mt-4 space-y-2">
+        <li class="bg-white p-3 rounded shadow">Ultratech Cement – 100 bags – Delivered ✅</li>
+        <li class="bg-white p-3 rounded shadow">TMT Steel – 200 kg – In Transit ⌛</li>
+      </ul>
+    </section>
+
+    <section id="payments" class="mb-12 bg-glass p-6 rounded-xl">
+      <h2 class="text-2xl font-semibold text-purple-700">💳 Payments</h2>
+      <ul class="mt-4 space-y-2">
+        <li class="bg-white p-3 rounded shadow">Milestone 1 – ₹1,00,000 – Paid ✅</li>
+        <li class="bg-white p-3 rounded shadow">Milestone 2 – ₹75,000 – Due ❌</li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
