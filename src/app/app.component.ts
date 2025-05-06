@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { NavigationBarComponent } from "./Mycomponents/navigation-bar/navigation-bar.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true, // Make AppComponent standalone as well
+  imports: [NavigationBarComponent], // Only import the NavigationBarComponent here
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'BuildMate';
