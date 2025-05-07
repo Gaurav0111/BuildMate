@@ -1,0 +1,47 @@
+.navbar {
+    padding: 10px 20px;
+}
+
+/* BuildMate Branding */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.home-logo {
+    width: 30px; /* Adjust the size of the logo */
+    height: 30px;
+}
+
+/* Center the Search Bar */
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 8px 12px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 40%;
+    margin: 0 auto; /* Centering */
+}
+
+.search-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+    background: transparent;
+}
+
+.search-btn {
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+}

@@ -26,11 +26,12 @@
                 "input": "public"
               }
             ],
-            "styles": ["node_modules/bootstrap/dist/css/bootstrap.bundle.min.css",
+            "styles": ["node_modules/bootstrap/dist/css/bootstrap.min.css",
 
               "src/styles.css"
             ],
             "scripts":[
+             
   "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js","node_modules/jquery/dist/jquery.min.js"
 ]
           },
@@ -95,5 +96,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "23b09331-b3b3-4623-ba33-8026452af265"
   }
 }
